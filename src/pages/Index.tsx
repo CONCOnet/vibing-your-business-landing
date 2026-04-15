@@ -1,6 +1,22 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    const loader = () => {
+      const s = document.createElement("script");
+      const tag = document.getElementsByTagName("script")[0];
+      s.src = "https://cdn.iubenda.com/iubenda.js";
+      tag.parentNode?.insertBefore(s, tag);
+    };
+    if (document.readyState === "complete") {
+      loader();
+    } else {
+      window.addEventListener("load", loader);
+      return () => window.removeEventListener("load", loader);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Hero */}
@@ -88,7 +104,24 @@ const Index = () => {
             />
           </div>
 
-          <p className="text-sm text-muted-foreground pt-4">
+          <div className="pt-4 flex gap-6 justify-center">
+            <a
+              href="https://www.iubenda.com/privacy-policy/37127752"
+              className="iubenda-white iubenda-noiframe iubenda-embed text-sm text-muted-foreground hover:text-primary transition-colors"
+              title="Privacy Policy"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.iubenda.com/privacy-policy/37127752/cookie-policy"
+              className="iubenda-white iubenda-noiframe iubenda-embed text-sm text-muted-foreground hover:text-primary transition-colors"
+              title="Cookie Policy"
+            >
+              Cookie Policy
+            </a>
+          </div>
+
+          <p className="text-sm text-muted-foreground pt-2">
             © 2026 VibingYourBusiness. Fatto con buone vibrazioni a Bra. 💜
           </p>
         </div>
