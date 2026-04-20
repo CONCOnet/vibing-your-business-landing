@@ -1,26 +1,109 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
     <title>Vibing Your Business</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <meta name="description" content="Creiamo il tuo sito vetrina con le giuste vibrazioni. Veloce, bello e senza stress." />
+    <meta name="author" content="VibingYourBusiness" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="VibingYourBusiness" />
+    <meta property="og:description" content="Creiamo il tuo sito vetrina con le giuste vibrazioni." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="page">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content reveal-up" data-delay="0">
+          <h1 class="hero-title">VibingYourBusiness</h1>
+          <p class="hero-subtitle">
+            Creiamo il tuo sito vetrina con le giuste vibrazioni. 🚀
+            <br />
+            Veloce, bello e senza stress!
+          </p>
+          <a href="tel:+390000000000" class="cta">Chiama Ora 📞</a>
+        </div>
+      </section>
+
+      <!-- Chi Siamo -->
+      <section class="about">
+        <div class="about-card reveal-up">
+          <h2 class="section-title">Chi Siamo ✌️</h2>
+          <p class="about-text">
+            Siamo due amici appassionati di tecnologia che usano il potere del
+            <span class="accent-secondary">vibe coding</span> e dell'<span
+              class="accent-primary"
+              >Intelligenza Artificiale</span
+            >
+            per portare la tua attività online in tempo record. Zero mal di testa, 100%
+            buone vibrazioni. 😎
+            <br /><br />
+            Pensiamo a tutto noi!
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <h2 class="section-title">Contatti 📬</h2>
+          <div class="contacts">
+            <a href="mailto:ciao@vibingyourbusiness.it" class="contact-link email"
+              >✉️ ciao@vibingyourbusiness.it</a
+            >
+            <a href="tel:+390000000000" class="contact-link phone"
+              >📞 +39 000 000 0000</a
+            >
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              title="Mappa Bra"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22745.77284178!2d7.833!3d44.698!2m3!1f0!2f0!3f0!3m2!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b3c0b4c8b8e7%3A0x4081090a28e2e20!2sBra%2C%20CN!5e0!3m2!1sit!2sit!4v1700000000000"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="legal-links">
+            <a
+              href="https://www.iubenda.com/privacy-policy/37127752"
+              class="iubenda-white iubenda-noiframe iubenda-embed legal-link"
+              title="Privacy Policy"
+              >Privacy Policy</a
+            >
+            <a
+              href="https://www.iubenda.com/privacy-policy/37127752/cookie-policy"
+              class="iubenda-white iubenda-noiframe iubenda-embed legal-link"
+              title="Cookie Policy"
+              >Cookie Policy</a
+            >
+          </div>
+
+          <p class="copyright">
+            © 2026 VibingYourBusiness. Fatto con buone vibrazioni a Bra. 💜
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
