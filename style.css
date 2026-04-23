@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: 250 30% 8%;
   --foreground: 60 30% 96%;
@@ -30,7 +62,7 @@ body {
 body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -42,7 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
 }
 
@@ -216,18 +248,6 @@ a {
 
 .contact-link.phone:hover {
   color: hsl(var(--secondary));
-}
-
-.map-wrap {
-  border-radius: 1.5rem;
-  overflow: hidden;
-  margin: 0 auto;
-  max-width: 48rem;
-  box-shadow: var(--shadow-card);
-}
-
-.map-wrap iframe {
-  display: block;
 }
 
 .legal-links {
